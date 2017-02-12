@@ -1,7 +1,7 @@
-package user.dao;
+package competitionFy.dao;
 
 import org.springframework.data.repository.CrudRepository;
-import user.model.User;
+import competitionFy.model.User;
 
 // This will be AUTO IMPLEMENTED by Spring into a Bean called userRepository
 // CRUD refers Create, Read, Update, Delete

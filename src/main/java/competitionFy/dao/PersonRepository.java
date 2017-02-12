@@ -1,6 +1,6 @@
-package user.dao;
+package competitionFy.dao;
 
-import user.model.Person;
+import competitionFy.model.Person;
 import org.springframework.data.repository.CrudRepository;
 
 /**

@@ -1,4 +1,4 @@
-package user.model;
+package competitionFy.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
