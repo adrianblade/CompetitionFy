@@ -10,8 +10,8 @@ import static javax.persistence.GenerationType.IDENTITY;
  * Created by Adrian on 12/02/2017.
  */
 @Entity // This tells Hibernate to make a table out of this class
-@Table(name = "person")
-public class Person implements java.io.Serializable{
+@Table(name = "player")
+public class Player implements java.io.Serializable{
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
@@ -23,7 +23,7 @@ public class Person implements java.io.Serializable{
 
     @Id
     @GeneratedValue(strategy = IDENTITY)
-    @Column(name = "PERSON_ID", unique = true, nullable = false)
+    @Column(name = "PLAYER_ID", unique = true, nullable = false)
     public Integer getId() {
         return id;
     }
@@ -56,7 +56,7 @@ public class Person implements java.io.Serializable{
         this.age = age;
     }
 
-    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "persons")
+    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "players")
     public Set<Team> getTeams() {
         return teams;
     }
