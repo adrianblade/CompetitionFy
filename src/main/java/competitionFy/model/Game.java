@@ -14,10 +14,12 @@ public class Game {
     @GeneratedValue(strategy= GenerationType.AUTO)
     private int id;
     private Date date;
-    private String localTeam;
-    private String visitorTeam;
-    private String scoreLocalTeam;
-    private String scoreVisitorTeam;
+    private int localTeam;
+    private int visitorTeam;
+    private int scoreLocalTeam;
+    private int scoreVisitorTeam;
+    private int schedulerPointLocalTeam;
+    private int schedulerPointVisitorTeam;
 
     @Id
     @GeneratedValue(strategy = IDENTITY)
@@ -38,35 +40,51 @@ public class Game {
         this.date = date;
     }
 
-    public String getLocalTeam() {
+    public int getLocalTeam() {
         return localTeam;
     }
 
-    public void setLocalTeam(String localTeam) {
+    public void setLocalTeam(int localTeam) {
         this.localTeam = localTeam;
     }
 
-    public String getVisitorTeam() {
+    public int getVisitorTeam() {
         return visitorTeam;
     }
 
-    public void setVisitorTeam(String visitorTeam) {
+    public void setVisitorTeam(int visitorTeam) {
         this.visitorTeam = visitorTeam;
     }
 
-    public String getScoreLocalTeam() {
+    public int getScoreLocalTeam() {
         return scoreLocalTeam;
     }
 
-    public void setScoreLocalTeam(String scoreLocalTeam) {
+    public void setScoreLocalTeam(int scoreLocalTeam) {
         this.scoreLocalTeam = scoreLocalTeam;
     }
 
-    public String getScoreVisitorTeam() {
+    public int getScoreVisitorTeam() {
         return scoreVisitorTeam;
     }
 
-    public void setScoreVisitorTeam(String scoreVisitorTeam) {
+    public void setScoreVisitorTeam(int scoreVisitorTeam) {
         this.scoreVisitorTeam = scoreVisitorTeam;
+    }
+
+    public int getSchedulerPointLocalTeam() {
+        return schedulerPointLocalTeam;
+    }
+
+    public void setSchedulerPointLocalTeam(int schedulerPointLocalTeam) {
+        this.schedulerPointLocalTeam = schedulerPointLocalTeam;
+    }
+
+    public int getSchedulerPointVisitorTeam() {
+        return schedulerPointVisitorTeam;
+    }
+
+    public void setSchedulerPointVisitorTeam(int schedulerPointVisitorTeam) {
+        this.schedulerPointVisitorTeam = schedulerPointVisitorTeam;
     }
 }
